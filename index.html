@@ -2,15 +2,22 @@
 <html>
   <head>
     <title>To Do App in jQuery</title>
-    <link rel="stylesheet" type="text/css" href="styling.css">
-
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="styling.css"> <!-- link to stylesheet -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script> <!-- insert jquery CDN -->
     <script type="text/javascript" src="jquery.js"></script>
   </head>
 
   <body>
-    <h1>Things to do:</h1>
-    <input type='text'>
-    <button id='addItem'>add to list</button>
+      <h1>Things to do:</h1>
+
+      <!-- form to get input from user -->
+      <form name="checkListForm">
+			  <input type="text">
+		  </form>
+      <button id="addItem">add to list</button>
+
+      <!-- listing of added items -->
+      <div class="listToDo">
+      </div>
   </body>
 </html>
