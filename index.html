@@ -2,35 +2,47 @@
 <html>
   <head>
     <title>To Do App in jQuery</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="styling.css"> <!-- link to stylesheet -->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script> <!-- insert jquery CDN -->
     <script type="text/javascript" src="jquery.js"></script>
   </head>
 
   <body>
+    <div class="container">
       <h1>Things to do:</h1>
 
       <!-- form to get input from user -->
+
       <form name="checkListForm">
-			  <input name="inputItem"type="text">
+			  <input class="iAddItem" name="inputItem" type="text" placeholder=" Add item to the list">
 		  </form>
       <button id="addItem">add to list</button>
 
       <!-- listing of added items -->
       <ul class="listToDo">
-        <li class="item">
-          <input type="checkbox"> Learn jQuery
-        </li>
+          <li class="item">
+            Learn jQuery
+          </li>
+          <li class="item">
+            Make to do list
+          </li>
+          <li class="item">
+            Realizing you made this awesome app
+          </li>
       </ul>
-
 
       <!-- total item on the list  -->
       <div class="totals">
-        <div>items todo: <span id="totalToDo">1</span></div>
-        <div> items done: <span id="totalDone">0</span></div>
-        <div>total items: <span id="total">1</span></div>
-    </div>
+        items todo: <span id="totalToDo">1</span>
+        items done: <span id="totalDone">0</span>
+        total items: <span id="total">1</span>
+        <button class="cleanUp">Delete items done</button>
+      </div>
 
-    <button class="cleanUp">Delete items done</button>
+
+    </div>
   </body>
+
 </html>
