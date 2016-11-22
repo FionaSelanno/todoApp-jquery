@@ -14,14 +14,16 @@ h1{
   font-family: sans-serif;
   font-size: 100px;
   text-align: center;
+  padding-bottom: 50px;
 }
 
 .item{
   background-color: white;
   color: #ffe589;
   font-size: 25px;
-  border: solid 2px;
-  padding: 0 40px;
+  padding: 10px 40px;
+  margin: 10px 0;
+
 }
 
 .itemDone{
@@ -30,6 +32,8 @@ h1{
 }
 
 .totals{
+  display: flex;
+  align-items: center;
   background-color: #E00A86;
   padding: 0 20px;
 }
@@ -45,11 +49,5 @@ h1{
 .totals, #totalToDo, #totalDone, #total{
   color:white;
   padding: 10px;
-}
-
-.cleanUp{
-  float: right;
-  background-color: #ffe589;
-  margin: auto;
-  /*padding: 10px;*/
+  align-items: center;
 }

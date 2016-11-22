@@ -14,34 +14,40 @@
       <h1>Things to do:</h1>
 
       <!-- form to get input from user -->
-
-      <form name="checkListForm">
-			  <input class="iAddItem" name="inputItem" type="text" placeholder=" Add item to the list">
-		  </form>
-      <button id="addItem">add to list</button>
-
+      <div class ="row">
+        <div class = "col m8 l9">
+          <form name="checkListForm">
+            <input class="iAddItem" name="inputItem" type="text" placeholder=" Add item to the list">
+          </form>
+        </div>
+        <div class = "col m4 l3">
+          <button class="btn" id="addItem">add to list</button>
+        </div>
+      </div>
       <!-- listing of added items -->
-      <ul class="listToDo">
+      <ul class="row listToDo">
           <li class="item">
             Learn jQuery
           </li>
           <li class="item">
-            Make to do list
+            Do something cool
           </li>
           <li class="item">
-            Realizing you made this awesome app
+            Realize you made this awesome app
           </li>
       </ul>
 
       <!-- total item on the list  -->
-      <div class="totals">
-        items todo: <span id="totalToDo">1</span>
-        items done: <span id="totalDone">0</span>
-        total items: <span id="total">1</span>
-        <button class="cleanUp">Delete items done</button>
+      <div class = "row totals">
+        <div class = "col m8 l9">
+          To do: <span id="totalToDo">3</span>
+          Done: <span id="totalDone">0</span>
+          Total: <span id="total">3</span>
+        </div>
+        <div class = "col m4 l3">
+          <button class="btn cleanUp">Clean list</button>
+        </div>
       </div>
-
-
     </div>
   </body>
 

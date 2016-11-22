@@ -6,6 +6,7 @@ $(document).ready(function(){
     $('.listToDo').append('<li class="item">' + $input + '</li>'); //appends the value of input to .listToDo as an input with a checkbox
 
       countingTotals();
+    $('input').val("");
   });
 
  // cross items of list:
